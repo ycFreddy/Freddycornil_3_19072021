@@ -1,0 +1,68 @@
+.btn-violet {
+  @include bordure;
+  @include fond;
+  @include opacite;
+  border-radius: 100rem;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;  
+  &-caption {    
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+  }
+  &:hover {
+    @include bordure($opacite-bordure-secondaire);
+    @include opacite($opacite-element-secondaire);
+    color: $couleur-secondaire;
+  }
+}
+
+.btn-fonctionnement {
+  @include bordure;
+  border-radius: 15px;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  background: $fond-gris;
+  margin: 0.6em;
+  &-caption {    
+    background: transparent;
+    color: #000;
+    font-size: 14px;
+    padding: 1em;
+  }
+  i {
+    padding-right: 1.5em;
+    font-size: 16PX;
+  }  
+  &-num {
+    position: absolute;
+    left: 12%;
+    margin-top: -2px;
+    width: 25px;
+    color: lighten($couleur-primaire, 35%);
+    background: $couleur-primaire;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 5px;
+  }
+  &:hover {
+    color: $couleur-secondaire;
+    background: lighten($couleur-primaire, 35%);
+    i {
+      color: $couleur-primaire;
+    }
+  }
+}

@@ -14,6 +14,82 @@ html, body {
   font-family: 'Shrikhand', sans-serif;
 }
 
+.btn-violet {
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  opacity: 0.9;
+  border-radius: 100rem;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  cursor: pointer;
+}
+
+.btn-violet-caption {
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+}
+
+.btn-violet:hover {
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
+  opacity: 0.4;
+  color: #FF79DA;
+}
+
+.btn-fonctionnement {
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  height: 100%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.05);
+  margin: 0.6em;
+}
+
+.btn-fonctionnement-caption {
+  background: transparent;
+  color: #000;
+  font-size: 14px;
+  padding: 1em;
+}
+
+.btn-fonctionnement i {
+  padding-right: 1.5em;
+  font-size: 16PX;
+}
+
+.btn-fonctionnement-num {
+  position: absolute;
+  left: 12%;
+  margin-top: -2px;
+  width: 25px;
+  color: #f2eafb;
+  background: #9356DC;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 10px;
+  padding: 5px;
+}
+
+.btn-fonctionnement:hover {
+  color: #FF79DA;
+  background: #f2eafb;
+}
+
+.btn-fonctionnement:hover i {
+  color: #9356DC;
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -51,11 +127,11 @@ html, body {
 }
 
 .localisation__titre {
-  width: 70%;
+  width: 60%;
   padding-top: 1em;
   padding-bottom: 0.5em;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -66,30 +142,22 @@ html, body {
   color: rgba(0, 0, 0, 0.5);
 }
 
-.localisation__btn-explorer {
-  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.3);
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  opacity: 0.9;
-  border-radius: 100rem;
-  height: 100%;
-  width: 60%;
+.fonctionnement {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-evenly;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  cursor: pointer;
-  font-size: 1.5rem;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
-.localisation__btn-explorer-caption {
-  background: transparent;
-  color: #fff;
-  font-size: 16px;
-}
-
-.localisation__btn-explorer:hover {
-  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.8);
-  opacity: 0.4;
-  color: #FF79DA;
+.fonctionnement__titre {
+  width: 80%;
+  padding-top: 2em;
+  padding-bottom: 1em;
+  text-align: left;
+  font-size: 20px;
+  font-weight: bold;
 }

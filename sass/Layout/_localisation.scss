@@ -1,0 +1,36 @@
+.localisation {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 4em;    
+  background: $fond-gris;
+  &__lieu {    
+    width: 100%;    
+    color: rgba(#000000, 0.7);;
+    background: $fond-gris;
+    border-top: 3px solid $fond-gris;
+    font-size: 14px;
+    font-weight: bold;
+    i {
+      padding: 1em;
+    }
+  }
+  &__titre {
+    width: 60%;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  &__sous-titre {
+    width: 80%;
+    padding-bottom: 2em;
+    text-align: center;
+    color: rgba(#000000, 0.5);
+  }  
+}
