@@ -28,7 +28,7 @@
   @include bordure;
   border-radius: 15px;
   height: 100%;
-  width: 70%;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -44,7 +44,7 @@
     padding: 1em;
   }
   i {
-    padding-right: 1.5em;
+    padding-right: 2.5em;
     font-size: 16PX;
   }  
   &-num {

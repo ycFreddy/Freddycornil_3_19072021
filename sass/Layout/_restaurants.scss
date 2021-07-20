@@ -1,4 +1,4 @@
-.fonctionnement {
+.restaurants {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -6,7 +6,8 @@
   height: 100%;
   width: 100%;
   text-align: center;
-  padding-bottom: 3em;
+  padding-bottom: 2em;
+  background: $fond-gris;    
   &__titre {
     width: 90%;
     padding-top: 2em;
@@ -14,5 +15,5 @@
     text-align: left;
     font-size: 20px;
     font-weight: bold;
-  }    
+  }  
 }
