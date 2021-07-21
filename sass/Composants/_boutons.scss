@@ -10,7 +10,7 @@
   justify-content: space-evenly;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  cursor: pointer;  
+  cursor: pointer;
   &-caption {    
     background: transparent;
     color: #fff;
@@ -29,7 +29,6 @@
   border-radius: 15px;
   height: 100%;
   width: 80%;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding-top: 0.5rem;
@@ -41,10 +40,14 @@
     background: transparent;
     color: #000;
     font-size: 14px;
-    padding: 1em;
+    padding: 1em;    
+    display: grid;
+    grid-template-columns: 0% 60%;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
   }
-  i {
-    padding-right: 2.5em;
+  i {    
     font-size: 16PX;
   }  
   &-num {
@@ -59,6 +62,7 @@
     font-weight: bold;
     font-size: 10px;
     padding: 5px;
+    text-align: center;
   }
   &:hover {
     color: $couleur-secondaire;

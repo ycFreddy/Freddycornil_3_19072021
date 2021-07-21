@@ -1,0 +1,12 @@
+.entete-menu__logopage {
+  @extend .logo;
+  align-items: left;
+  a {
+    position: absolute;    
+    color: black;
+    text-decoration: none;   
+    padding-right: 4em;
+    top: 20px;
+    left: 50px;
+  }
+}

@@ -14,6 +14,135 @@ html, body {
   font-family: 'Shrikhand', sans-serif;
 }
 
+.anim {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  animation: anim 0.5s 3s both;
+}
+
+.anim__spinner {
+  color: official;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.anim__spinner div {
+  transform-origin: 40px 40px;
+  animation: animspinner 1.2s linear infinite;
+}
+
+.anim__spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 37px;
+  width: 6px;
+  height: 18px;
+  border-radius: 20%;
+  background: #000;
+}
+
+.anim__spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+
+.anim__spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+
+.anim__spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+
+.anim__spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+
+.anim__spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+
+.anim__spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+
+.anim__spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+
+.anim__spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+
+.anim__spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+
+.anim__spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+
+.anim__spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+
+.anim__spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+
+main {
+  animation: main 3s 3s both;
+}
+
+@keyframes main {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes anim {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes animspinner {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 .btn-violet {
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
@@ -47,7 +176,6 @@ html, body {
   border-radius: 15px;
   height: 100%;
   width: 80%;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding-top: 0.5rem;
@@ -62,10 +190,14 @@ html, body {
   color: #000;
   font-size: 14px;
   padding: 1em;
+  display: grid;
+  grid-template-columns: 0% 60%;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left;
 }
 
 .btn-fonctionnement i {
-  padding-right: 2.5em;
   font-size: 16PX;
 }
 
@@ -81,6 +213,7 @@ html, body {
   font-weight: bold;
   font-size: 10px;
   padding: 5px;
+  text-align: center;
 }
 
 .btn-fonctionnement:hover {
@@ -94,6 +227,7 @@ html, body {
 
 .restaurants__vignette {
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
   display: block;
   margin-bottom: 1em;
   border-radius: 10px;
@@ -103,8 +237,9 @@ html, body {
 }
 
 .restaurants__vignette img {
+  top: -20px;
   width: 100%;
-  height: 230px;
+  height: 180px;
   border-radius: 10px 10px 0px 0px;
   object-fit: cover;
 }
@@ -124,6 +259,7 @@ html, body {
 }
 
 .restaurants__vignette-description i:hover {
+  transition: transform 450ms, color 300ms 150ms;
   color: #9356DC;
 }
 
@@ -140,15 +276,43 @@ html, body {
   opacity: 0.9;
 }
 
-.logo {
+.restaurants__vignette-nouveau-resto {
+  position: absolute;
+  top: 10px;
+  left: 75%;
+  font-size: 14px;
+  font-weight: bold;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  border-radius: 2px;
+  background: #99E2D0;
+  color: #278870;
+}
+
+.logo, .entete-menu__logopage {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   margin: 1em;
 }
 
-.logo img {
+.logo img, .entete-menu__logopage img {
   height: 25px;
+}
+
+.entete-menu__logopage {
+  align-items: left;
+}
+
+.entete-menu__logopage a {
+  position: absolute;
+  color: black;
+  text-decoration: none;
+  padding-right: 4em;
+  top: 20px;
+  left: 50px;
 }
 
 .localisation {
@@ -164,6 +328,8 @@ html, body {
 }
 
 .localisation__lieu {
+  position: relative;
+  left: -10px;
   width: 100%;
   color: rgba(0, 0, 0, 0.7);
   background: rgba(0, 0, 0, 0.05);
@@ -255,9 +421,145 @@ html, body {
 
 .footer__menu {
   font-size: 14px;
+  padding: 0.2em;
 }
 
 .footer__menu i {
   font-size: 10px;
   margin-right: 0.5em;
+  min-width: 13px;
+}
+
+.entete-menu {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: transparent;
+}
+
+.entete-menu__img-restaurant {
+  background: transparent;
+}
+
+.entete-menu__img-restaurant-img1 {
+  height: 340px;
+  background-image: url("../images/restaurants/restaurant1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entete-menu__img-restaurant-img2 {
+  height: 340px;
+  background-image: url("../images/restaurants/restaurant2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entete-menu__img-restaurant-img3 {
+  height: 340px;
+  background-image: url("../images/restaurants/restaurant3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entete-menu__img-restaurant-img4 {
+  height: 340px;
+  background-image: url("../images/restaurants/restaurant4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-titre {
+  position: absolute;
+  display: flex;
+  top: 330px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  width: 100%;
+  text-align: center;
+  border-radius: 30px 30px 0px 0px;
+  background: #f2f2f2;
+  color: black;
+  font-size: 25px;
+  text-align: left;
+}
+
+.menu-titre i {
+  padding-right: 1.5em;
+  font-weight: normal;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: #f2f2f2;
+  padding-bottom: 5em;
+}
+
+.menu__commander {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 3em;
+}
+
+.entrees {
+  padding: 1em;
+  text-align: left;
+  width: 100%;
+}
+
+.entrees__souligne {
+  height: 3px;
+  width: 40px;
+  background: #99E2D0;
+}
+
+.plats {
+  box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  color: black;
+  text-decoration: none;
+  width: 95%;
+  background: white;
+  text-align: left;
+  padding: 0.8em;
+}
+
+.plats__nom {
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 70%;
+}
+
+.plats__description {
+  text-align: left;
+  font-size: 14px;
+  opacity: 70%;
+}
+
+.plats__prix {
+  position: absolute;
+  font-size: 14px;
+  opacity: 70%;
+  left: 85%;
+  font-weight: bold;
 }

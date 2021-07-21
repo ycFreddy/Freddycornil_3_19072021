@@ -2,10 +2,13 @@
 @import "utils/variables";
 @import "utils/mixins";
 @import "Base/base";
+@import "Base/spinner";
 @import "Composants/boutons";
 @import "Composants/vignette";
 @import "Layout/logo";
+@import "Layout/logopage";
 @import "Layout/localisation";
 @import "Layout/fonctionnement";
 @import "Layout/restaurants";
 @import "Layout/footer";
+@import "pages/page";

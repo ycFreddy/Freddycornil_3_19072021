@@ -9,6 +9,8 @@
   padding-bottom: 4em;    
   background: $fond-gris;
   &__lieu {    
+    position: relative;
+    left: -10px;
     width: 100%;    
     color: rgba(#000000, 0.7);;
     background: $fond-gris;

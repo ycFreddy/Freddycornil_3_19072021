@@ -17,9 +17,11 @@
   }
   &__menu {
     font-size: 14px;
+    padding: 0.2em;
     i {
       font-size: 10px;
       margin-right: 0.5em;
+      min-width: 13px;
     }
   }
 }

@@ -1,0 +1,126 @@
+.entete-menu {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-align: center;  
+  background: transparent;
+  &__img-restaurant {
+    background: transparent; 
+  }
+}
+
+.entete-menu__img-restaurant-img1 {
+  height: 340px;
+  background-image: url("../images/restaurants/restaurant1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entete-menu__img-restaurant-img2 {
+  height: 340px;
+  background-image: url("../images/restaurants/restaurant2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entete-menu__img-restaurant-img3 {
+  height: 340px;
+  background-image: url("../images/restaurants/restaurant3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.entete-menu__img-restaurant-img4 {
+  height: 340px;
+  background-image: url("../images/restaurants/restaurant4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-titre {
+  position: absolute;
+  display: flex;
+  top: 330px;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  width: 100%;
+  text-align: center;
+  border-radius: 30px 30px 0px 0px;
+  background: $fond-gris-solid;  
+  color: black;
+  font-size: 25px;
+  text-align: left;
+  i {
+    padding-right: 1.5em;
+    font-weight: normal;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;  
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  background: $fond-gris-solid;  
+  padding-bottom: 5em;
+  &__commander {    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 3em;
+  }
+}
+
+.entrees {
+  padding: 1em;
+  text-align: left;
+  width: 100%;
+  &__souligne {
+    height: 3px;
+    width: 40px;
+    background: $couleur-tertiaire;
+  }  
+}
+
+.plats {
+  @include bordure;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 1em;
+  border-radius: 15px;
+  color: black;  
+  text-decoration: none;
+  width: 95%;
+  background: white;
+  text-align: left;
+  padding: 0.8em;
+  &__nom {    
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 70%;
+  }
+  &__description {
+    text-align: left;
+    font-size: 14px;
+    opacity: 70%;
+  }
+  &__prix {
+    position: absolute;
+    font-size: 14px;
+    opacity: 70%;
+    left: 85%;
+    font-weight: bold;
+  }
+}
