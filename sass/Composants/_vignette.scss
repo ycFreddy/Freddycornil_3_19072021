@@ -23,11 +23,11 @@
       position: absolute;
       top: 20%;
       left: 90%;
-      font-size: 18px;
-      &:hover {
-        transition: transform 450ms, color 300ms 150ms;
-        color: $couleur-primaire;
-      }
+      font-size: 18px;   
+    }
+    i:hover {
+      transition: transform 450ms, color 300ms 150ms;
+      color: $couleur-primaire;
     }
     &-nom {
       font-weight: bold;
@@ -36,7 +36,7 @@
       font-size: 14px;
       opacity: 70%;
     }
-  }
+  }  
   &:hover {
     @include opacite($opacite-element-primaire);
   }
