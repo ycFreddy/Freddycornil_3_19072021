@@ -26,7 +26,6 @@ html, body {
 }
 
 .anim__spinner {
-  color: official;
   display: inline-block;
   position: relative;
   width: 80px;
@@ -311,10 +310,6 @@ main {
   height: 25px;
 }
 
-.entete-menu__logopage {
-  align-items: left;
-}
-
 .entete-menu__logopage a {
   position: absolute;
   color: black;
@@ -340,7 +335,6 @@ main {
   position: relative;
   left: -10px;
   width: 100%;
-  color: rgba(0, 0, 0, 0.7);
   background: rgba(0, 0, 0, 0.05);
   border-top: 3px solid rgba(0, 0, 0, 0.05);
   font-size: 14px;
