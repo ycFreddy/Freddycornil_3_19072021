@@ -269,9 +269,10 @@ main {
 .btn-fonctionnement-num {
   position: absolute;
   top: 22px;
-  left: -15px;
+  left: -10px;
   margin-top: -2px;
-  width: 25px;
+  width: 20px;
+  height: 20px;
   color: #f2eafb;
   background: #9356DC;
   border-radius: 25px;
@@ -356,7 +357,7 @@ main {
   opacity: 70%;
 }
 
-.restaurants__vignette:hover {
+.restaurants__vignette a:hover {
   opacity: 0.9;
 }
 

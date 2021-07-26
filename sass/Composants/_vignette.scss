@@ -33,7 +33,7 @@
       opacity: 70%;
     }
   }  
-  &:hover {
+  a:hover {
     @include opacite($opacite-element-primaire);
   }
 }
