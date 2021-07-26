@@ -369,11 +369,9 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 1em;
-}
-
-.logo img, .entete-menu__logopage img {
-  height: 25px;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  font-size: 27px;
 }
 
 .entete-menu__logopage a {
@@ -381,8 +379,10 @@ main {
   color: black;
   text-decoration: none;
   padding-right: 4em;
-  top: 20px;
-  left: 50px;
+  font-size: 18px;
+  font-weight: unset;
+  top: auto;
+  left: 1em;
 }
 
 .localisation {
