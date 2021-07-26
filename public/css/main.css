@@ -296,12 +296,22 @@ main {
 }
 
 .fa-heart:hover {
+  animation: affiche 1s both;
   text-shadow: unset;
   background-image: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
   background-size: 100%;
   background-repeat: repeat;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes affiche {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .restaurants__vignette {
