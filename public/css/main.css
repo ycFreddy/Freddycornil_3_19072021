@@ -225,6 +225,20 @@ main {
   color: #9356DC;
 }
 
+.fa-heart {
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: #f2f2f2;
+}
+
+.fa-heart:hover {
+  text-shadow: unset;
+  background-image: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .restaurants__vignette {
   box-shadow: 0px 5px 10px 0 rgba(0, 0, 0, 0.2);
   position: relative;
@@ -284,20 +298,6 @@ main {
   border-radius: 2px;
   background: #99E2D0;
   color: #278870;
-}
-
-.fa-heart {
-  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
-  color: #f2f2f2;
-}
-
-.fa-heart:hover {
-  text-shadow: unset;
-  background-image: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
-  background-size: 100%;
-  background-repeat: repeat;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .logo, .entete-menu__logopage {
@@ -499,7 +499,6 @@ main {
 
 .menu-titre i {
   padding-right: 1.5em;
-  font-weight: normal;
 }
 
 .menu {
