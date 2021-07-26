@@ -258,11 +258,6 @@ main {
   font-size: 18px;
 }
 
-.restaurants__vignette-description i:hover {
-  transition: transform 450ms, color 300ms 150ms;
-  color: #9356DC;
-}
-
 .restaurants__vignette-description-nom {
   font-weight: bold;
 }
@@ -289,6 +284,20 @@ main {
   border-radius: 2px;
   background: #99E2D0;
   color: #278870;
+}
+
+.fa-heart {
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  color: #f2f2f2;
+}
+
+.fa-heart:hover {
+  text-shadow: unset;
+  background-image: linear-gradient(0deg, #FF79DA 0%, #9356DC 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logo, .entete-menu__logopage {
