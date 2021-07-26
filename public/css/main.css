@@ -636,7 +636,7 @@ main {
 .plats__prix {
   position: absolute;
   display: block;
-  right: 30px;
+  right: 5%;
   text-align: right;
   padding-top: 1em;
   margin: 0px;
