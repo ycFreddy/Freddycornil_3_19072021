@@ -1,3 +1,4 @@
+// Entete des pages menus
 .entete-menu {
   display: block;
   height: 100%;
@@ -91,6 +92,7 @@
   }  
 }
 
+// formatage des plats
 .plats {  
   @include bordure;
   border-radius: 15px;
@@ -102,10 +104,7 @@
   overflow: hidden;
   width: 95%;
   margin-bottom: 1em;
-  &__menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;    
+  &__menu {  
     padding-left: 1em;
     width: 85%;    
     text-align: left;    

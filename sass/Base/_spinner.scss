@@ -1,3 +1,4 @@
+// Animation du spiner par application d'un format sur les div enfants avec rotation et opacit 
 .anim {  
   position: absolute;
   display: flex;
@@ -78,10 +79,13 @@
   }
 }
 
+// apparition en fondu des pages après le spinner
 main {  
   animation: main 3s 3s both;
 }
 
+// Apparition du menu en cascade
+// par un delai d'affichage décalé des plats du menu
 .menu {        
   .plats {    
     opacity: 0;    
@@ -129,7 +133,7 @@ main {
   }
 }
 
-
+// gestion de l'opacité des élements
 @keyframes main{
   0% {
       opacity: 0;
@@ -145,7 +149,7 @@ main {
   }
   100% {
       opacity: 0;
-      visibility: hidden;
+      display: none;
   }
 }
 
@@ -155,7 +159,7 @@ main {
   }
   100% {
       opacity: 0;
-      visibility: hidden;
+      display: none;
   }
 }
 
